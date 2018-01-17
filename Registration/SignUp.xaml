@@ -1,0 +1,49 @@
+﻿<Page x:Class="Registration.SignUp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Registration"
+      mc:Ignorable="d"
+      Title="SignUp" Height="350" Width="770">
+
+    <StackPanel Orientation="Horizontal" Background="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="1" x:Name="buttonSelect" Content="Set Photo" Width="70" Click="photoClick"/>
+            <Image Grid.Row="0" x:Name="imageBlock" Height="150" Width="250" Margin="20"/>
+            <TextBlock x:Name="textPhoto" Grid.Row="0" Text="Please set image" Height="150" Width="250" TextAlignment="Center" Margin="20" Padding="0,66,0,0"/>
+        </Grid>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170" />
+                <ColumnDefinition Width="250" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="50*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Content="Login" HorizontalAlignment="Stretch" />
+            <Label Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" Content="Password" HorizontalAlignment="Stretch" BorderBrush="Black" />
+            <Label Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" Content="Re-enter password" HorizontalAlignment="Stretch" BorderBrush="Black" />
+            <Label Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Content="E-mail" HorizontalAlignment="Stretch" BorderBrush="Black" />
+            <Label Grid.Row="4" Grid.Column="0" VerticalAlignment="Top" Content="Tell us something about you" HorizontalAlignment="Stretch" BorderBrush="Black" />
+
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="5" TextWrapping="Wrap" />
+            <PasswordBox Grid.Row="1" Grid.Column="1" Margin="5"/>
+            <PasswordBox Grid.Row="2" Grid.Column="1" Margin="5"/>
+            <TextBox Grid.Row="3" Grid.Column="1" Margin="5" TextWrapping="Wrap"/>
+            <TextBox Grid.Row="4" Grid.Column="1" Margin="5" TextWrapping="Wrap" Height="100" VerticalAlignment="top"/>
+            
+        </Grid>
+    </StackPanel>
+
+</Page>
